@@ -51,8 +51,8 @@ def paint():
     global list
     '''for (r,c) in list:                             # for j in range(len(list)):
         print(len(list))'''
-    l = tuple(list)
-    for (r,c) in l:
+    
+    for (r,c) in tuple(list):
         if result[r,c] == 0:                       # (r,c) = list[j]
             cs.itemconfig(rects[r,c], fill="#ddd")
         else:
