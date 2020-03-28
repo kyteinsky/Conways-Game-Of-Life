@@ -50,7 +50,7 @@ def paint():
         print(len(list))'''
 
     for r,c in tuple(list):
-        # put 1 in place of those indices ==============================================================
+        
         if result[r,c] == 0:                       # (r,c) = list[j]
             cs.itemconfig(rects[r,c], fill="#ddd")
         else:
